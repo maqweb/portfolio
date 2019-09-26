@@ -5,6 +5,10 @@
 .works {
   margin-bottom: 250px;
 
+  @include tablets {
+    margin-bottom: 100px;
+  }
+
   @include phones {
     margin-bottom: 100px;
   }
@@ -20,6 +24,7 @@
   @include tablets {
     justify-content: center;
   }
+  
 }
 
 .works__item {

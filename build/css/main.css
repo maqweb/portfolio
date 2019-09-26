@@ -448,6 +448,9 @@ body {
 */
 .works {
   margin-bottom: 250px; }
+  @media screen and (max-width: 768px) {
+    .works {
+      margin-bottom: 100px; } }
   @media screen and (max-width: 460px) {
     .works {
       margin-bottom: 100px; } }
