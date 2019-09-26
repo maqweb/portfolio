@@ -453,6 +453,8 @@ body {
       margin-bottom: 100px; } }
 
 .works__list {
+  width: 88%;
+  margin: 0 auto; 
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -461,8 +463,7 @@ body {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  width: 88%;
-  margin: 0 auto; }
+}
   @media screen and (max-width: 768px) {
     .works__list {
       -webkit-box-pack: center;
