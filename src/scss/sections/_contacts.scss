@@ -1,0 +1,61 @@
+/*
+* Contacts styles
+*/
+
+.contacts {
+  margin-bottom: 50px;
+
+  .section__title {
+    margin-bottom: 20px;
+  }
+
+  @include phones {
+    margin-bottom: 80px;
+  }
+}
+
+.contacts__wrap {
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.phone,
+.mail {
+  color: #ccc;
+  font-size: 14px;
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.phone__link,
+.mail__link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.soc__list {
+  display: flex;
+  justify-content: center;
+  
+}
+
+.soc__item {
+  width: 40px;
+  height: 40px;
+  list-style-type: none;
+  margin: 0 10px;
+  
+  &:hover {
+    .soc__pic {
+      transform: scale(1.1, 1.1)
+    }
+  }
+}
+
+.soc__pic {
+  width: 100%;
+  transition: transform .2s;
+}

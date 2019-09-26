@@ -1,0 +1,84 @@
+/*
+* Works styles
+*/
+
+.works {
+  margin-bottom: 220px;
+
+  @include phones {
+    margin-bottom: 100px;
+  }
+}
+
+.works__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+
+  @include tablets {
+    justify-content: center;
+  }
+}
+
+.works__item {
+  position: relative;
+  width: 300px;
+  margin: 1%;
+  list-style-type: none;
+  overflow: hidden;
+
+  &:hover {
+    .works__pic {
+      transform: scale(1.03, 1.03);
+    }
+
+    .works__descr {
+      transform: translateY(90px);
+      color: #ccc;
+    }
+  }
+
+  @include tablets {
+    margin-bottom: 30px;
+  }
+}
+
+.works__pic {
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  height: 175px;
+  transition: all 0.25s;
+}
+
+.works__descr {
+  color: #666;
+  font-size: 12px;
+  font-weight: 300;
+  padding: 15px 20px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.9);
+  transform: translateY(130px);
+  transition: all 0.25s;
+}
+
+.works__title {
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 17px;
+}
+
+.works__technologies {
+  display: flex;
+}
+
+.technologies {
+  list-style-type: none;
+  border: 1px solid #ccc;
+  padding: 5px;
+  margin-right: 5%;
+}

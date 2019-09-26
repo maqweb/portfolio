@@ -1,0 +1,56 @@
+/*
+* About styles
+*/
+
+.about {
+  margin-bottom: 50px;
+}
+
+.about__wrap {
+  max-width: 700px;
+  margin: 0 auto;
+  background: rgba(0, 0, 0, 0.5);
+  color: #e5e7e9;
+  padding: 30px;
+
+  @include tablets {
+    background: rgba(0, 0, 0, 0.7);
+  }
+}
+
+.about__greeting,
+.about__greeting-descr {
+  text-align: center;
+  margin-bottom: 15px;
+  font-weight: 300;
+}
+
+
+.about__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  
+  @include tablets {
+    justify-content: center;
+  }
+}
+
+.about__item {
+  min-width: 300px;
+  width: 45%;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.about__pic {
+  width: 25%;
+  margin-right: 20px;
+}
+
+.about__descr {
+  font-size: 14px;
+  color: #ccc;
+}
